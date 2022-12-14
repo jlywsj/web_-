@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container show">
+        <div class="form">
+            <form action="https://www.baidu.com/" method="get">
+                <p class="title">Login</p>
+                <div class="shift">
+                    <span>注册</span><i class="iconfont icon-youjiantou"></i>
+                </div>
+                <div class="input">
+                    <p>Username</p><input type="text" placeholder="Enter username">
+                </div>
+
+                <div class="input">
+                    <p>Password</p><input type="password" placeholder="Enter password">
+                </div>
+                <div class="input button">
+                    <button type="submit">Lognin</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container hidden" style="display: none;">
+        <div class="form">
+            <form action="https://www.baidu.com/" method="get">
+                <p class="title">Register</p>
+                <div class="shift">
+                    <span>登录</span><i class="iconfont icon-youjiantou"></i>
+                </div>
+                <div class="input">
+                    <p>Username</p><input type="text" placeholder="Enter username">
+                </div>
+                <div class="input">
+                    <p>Email</p><input type="text" placeholder="Enter email" id="email">
+                </div>
+                <div class="input">
+                    <p>Password</p><input type="password" placeholder="Enter password">
+                </div>
+                <div class="input">
+                    <p>Confirm Password</p><input type="password" placeholder="Enter password again">
+                </div>
+                <div class="input button">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="mountain">
+        <div class="bear"></div>
+    </div>
+    <script>
+        window.onload = function () {
+            $('.shift').on('click', function () {
+                let a = $('.container.hidden');
+                let b = $('.container.show');
+                a.css('display', 'block').removeClass('hidden').addClass('show');
+                b.css('display', 'none').removeClass('show').addClass('hidden');
+            });
+        }
+    </script>
+</body>
+
+</html>

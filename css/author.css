@@ -1,0 +1,57 @@
+body {
+  background-color: #8db0ac;
+}
+.authorbox {
+  width: 50rem;
+  margin: 1.25rem auto;
+  color: aliceblue;
+}
+.authorbox .top {
+  margin-top: 2.5rem;
+}
+.authorbox .top h1 {
+  font-weight: 300;
+}
+.authorbox .hr {
+  width: 100%;
+  height: 0.3125rem;
+  border: 0.0625rem dashed;
+  border-left: none;
+  border-right: none;
+}
+.authorbox .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3.125rem;
+}
+.authorbox .box img {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.authorbox .box table tr {
+  line-height: 2.5rem;
+}
+.authorbox .box table:last-child {
+  margin-right: -6.25rem;
+}
+.authorbox .section {
+  margin-top: 2.5rem;
+}
+.authorbox .section .product {
+  margin-left: 2.5rem;
+}
+.authorbox .section a {
+  color: inherit;
+  text-decoration: none;
+}
+.authorbox .section a:hover {
+  color: aqua;
+}
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}

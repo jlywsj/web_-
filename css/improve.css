@@ -1,0 +1,20 @@
+.improvebox .top {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.improvebox .top h1 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.improvebox .top .desc {
+  padding-left: 20px;
+}
+.improvebox .context {
+  margin: 0 40px;
+}
+.improvebox .context p {
+  text-indent: 2em;
+  line-height: 2em;
+  margin: 20px 0;
+}

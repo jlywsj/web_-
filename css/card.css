@@ -1,0 +1,88 @@
+.container {
+  position: relative;
+  width: 6.25rem;
+  height: 9.375rem;
+  text-align: center;
+  border: 1px solid #d47eff;
+  border-radius: 1.5625rem;
+  line-height: 9.375rem;
+  z-index: 1;
+  overflow: hidden;
+  float: left;
+  margin-left: 10px;
+}
+.container span {
+  line-height: 9.375rem;
+  font-size: 3.125rem;
+  color: #627bec;
+  display: inline-block;
+  background-color: #1d1322;
+  border: 1px solid #d47eff;
+  border-radius: 1.5625rem;
+  width: 5.625rem;
+  height: 8.875rem;
+  position: absolute;
+  left: .25rem;
+  top: .1875rem;
+  z-index: 200;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  width: 6.25rem;
+  height: 9.375rem;
+  left: -3.125rem;
+  top: -4.6875rem;
+  z-index: 1;
+  background: radial-gradient(rgba(132, 0, 255, 0.825), #9500ff, #ff00a2, #d19de7);
+  box-shadow: -3px 3px 5px #d19de7;
+  animation: rotate var(--o) infinite linear;
+  transform-origin: 100% 100%;
+}
+.container::after  {
+  content: "";
+  position: absolute;
+  width: 6.25rem;
+  height: 9.375rem;
+  left: 3.125rem;
+  top: 4.6875rem;
+  z-index: 1;
+  background: radial-gradient(rgba(132, 0, 255, 0.825), #9500ff, #ff00a2, #d19de7);
+  box-shadow: -3px 3px 5px #d19de7;
+  animation: rotate var(--o) infinite linear;
+  transform-origin: 0% 0%;
+}
+
+.one{
+  --i: -1s;
+  --o: 3s;
+}
+
+.two{
+  --i: -2s;
+  --o: 3s;
+}
+
+.three{
+  --i: -3s;
+  --o: 3s;
+}
+
+.four{
+  --i: -4s;
+  --o: 3s;
+}
+
+.five{
+  --i:-5s;
+  --o: 2s;
+}
+
+
+@keyframes rotate {
+  0%{}
+
+  100%{
+    transform: rotate(360deg);
+  }
+}

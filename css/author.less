@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(141, 176, 172);
+}
+
+.authorbox{
+    width: 50rem;
+    margin: 1.25rem auto;
+    color: aliceblue;
+
+    .top{
+        margin-top: 2.5rem;
+        h1{
+            font-weight: 300;
+        }
+    }
+
+    .hr{
+        width: 100%;
+        height: .3125rem;
+        border: .0625rem dashed ;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 3.125rem;
+
+        img{
+            display: block;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;    
+        }
+
+        table{
+
+            tr{
+                line-height: 2.5rem;
+            }
+
+            &:last-child{
+                margin-right: -6.25rem;
+            }
+        }
+    }
+
+    .section{
+        margin-top: 2.5rem;
+
+        .product{
+            margin-left: 2.5rem;
+        }
+
+        a{
+            color: inherit;
+            text-decoration: none;
+            
+            &:hover{
+                color: aqua;
+            }
+        }
+    }
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
